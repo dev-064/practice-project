@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    <title>heading</title>
+    <style>
+        body {
+            background-color: rgb(253 242 222);
+        }
+
+        .navbar {
+            -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.425);
+            box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-evenly;
+            padding: 0px 0px 0px 0px;
+            background-color: rgb(255, 195, 104);
+            margin-top: 0%;
+            border-radius: 30px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        .content {
+            padding-left: 5%;
+            padding-right: 5%;
+            /* border: 3px whitesmoke solid; */
+        }
+
+        .content a {
+            color: #744747;
+            text-decoration: none;
+            font-size: 2.5vw;
+            font-family: 'Patrick Hand', cursive;
+            font-weight: bold;
+        }
+
+        .navbar :hover {
+            background-color: rgb(249, 173, 30);
+            border-radius: 20px;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: 3.5vw;
+            font-family: 'Tapestry', cursive;
+        }
+
+        .intro1 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: 4vw;
+            font-family: 'Tapestry', cursive;
+        }
+
+        .intro :hover {
+            opacity: 0.65;
+            font-weight: bolder;
+        }
+
+        .intro1 :hover {
+            opacity: 0.65;
+            font-weight: bolder;
+        }
+
+        .sticker {
+            padding-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image {
+            border-radius: 200px;
+            width: 20%;
+            height: 20%;
+        }
+
+        .sticker img:hover {
+            -webkit-box-shadow: -2px -1px 1px 4px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: -3px -2px 30px 14px rgba(221, 118, 0, 0.425);
+            box-shadow: -1px -1px 45px 18px rgba(26, 255, 194, 0.35);
+        }
+
+        .about {
+            display: flex;
+            flex-direction: wrap;
+            justify-content: space-evenly;
+            font-size: 2.5vw;
+        }
+
+        .formalintro1 {
+            margin-top: 3%;
+            margin-bottom: 3%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 2.5vw;
+
+        }
+
+        .formalintro {
+            background-color: rgb(252, 224, 172);
+            margin-top: 3%;
+            margin-bottom: 3%;
+            flex: 1;
+            margin-left: 6%;
+            margin-right: 6%;
+            border-radius: 10px;
+            box-shadow:
+                0 0 0 5px hsl(0, 9%, 71%),
+                0 0 0 7.5px hsl(0, 11%, 61%);
+        }
+
+        .about :hover {
+            border: 10px;
+            box-shadow:
+                0 0 0 5px hsl(0, 0%, 48%),
+                0 0 0 7.5px hsl(0, 1%, 32%);
+            background-color: rgb(248, 209, 137);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            background-color: rgb(255 225 141);
+            border: 3px solid rgb(146, 68, 0);
+            border-style: double;
+            border-radius: 30%;
+        }
+
+        .gallery img {
+            width: 20%;
+            height: 20%;
+            border-radius: 30%;
+            border: 4px solid black;
+            border-style: double;
+        }
+
+        .galhead {
+            font-size: 3vw;
+            font-family: 'Tapestry', cursive;
+        }
+
+        .artworks {
+            font-size: 3vw;
+            font-family: 'Tapestry', cursive;
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-evenly;
+            padding: 0px 0px 0px 0px;
+            margin-top: 0%;
+            padding-top: 3px;
+            padding-bottom: 10px;
+        }
+
+        .contacts :hover {
+            transform: rotate(180deg);
+            transition-delay: all 0.3s ease-in-out 0s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul class="navbar" style="list-style-type: none;">
+                <li class="content"><a href="#sticker">HOME</a></li>
+                <li class="content"><a href="#about">ABOUT</a></li>
+                <li class="content"><a href="#gallery">GALLERY</a></li>
+                <li class="content"><a href="#contacts">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sticker" id="sticker">
+        <img src="how-you-doin.jpeg" alt="error image" class="image" id="image1">
+    </div>
+    <div class="intro">
+        <p style="margin-bottom: 7px;margin-top: 4%;">
+            HEY PEEPS,
+        </p>
+    </div>
+    <div class="intro1">
+        <p style="margin-top: 0px;margin-bottom: 0%;">
+            I AM DIVYANSHU JHA
+        </p>
+    </div>
+    <div class="intro1">
+        <p style="margin-top: 0%;margin-bottom: 0%;">---------------------------------</p>
+    </div>
+    <div class="formalintro1" style="font-family: 'Patrick Hand', cursive;font-size: 3.5vw;">
+        I am a first year undergrad at IIT KHARAGPUR<br>
+        I am a competitive coder and recently also started learning web development
+
+    </div>
+    <div class="about" id="about">
+        <div class="formalintro">
+            <h4 style="text-align: center;">EDUCATION</h4>
+            * Completed 10th from T Raza High School and secured 94%<br><br>
+            * Completed 12th from Loyola High School and secured 95.2%<br><br>
+            * Secured AIR 2204 in the JEE Advanced Exam<br><br>
+            * Currently studying at IIT KHARAGPUR in the Instrumentation Engineering Branch
+
+        </div>
+        <div class="formalintro">
+            <h4 style="text-align: center;">SKILLS</h4>
+            * Programming and development : CPP, C , HTML and CSS<br><br>
+            * I am a competitive coder at codechef with the highest rating of 1704<br><br>
+            * I have a average typing speed of 75wpm
+        </div>
+        <div class="formalintro">
+            <h4 style="text-align: center;">HOBBIES</h4>
+            * My free time is often spent sketching.<br><br>
+            * Listening to songs is something I can do for hours at a time.<br><br>
+            * In my spare time, I enjoy playing Table Tennis.
+        </div>
+
+    </div>
+    <div class="intro1">
+        <p style="margin-top: 0%;margin-bottom: 0%;">---------------------------------</p>
+    </div>
+    <div class="galhead">
+        <h3 style="text-align: center;text-decoration: underline overline;">SOME OF THE RANDOM IMAGES</h3>
+    </div>
+    <div class="gallery" id="gallery">
+        <img src="img/images.jpg" alt="">
+        <img src="img/spiderman-disneyland-paris-marvel-summer-of-superheroes_1536522710.jpg" alt="">
+    </div>
+    <div class="artworks">
+        <h3 style="text-align: center;text-decoration: underline overline;">SOME OF MY ARTWORKS</h3>
+    </div>
+    <div class="gallery">
+        <img src="img/WhatsApp Image 2022-04-28 at 1.21.32 PM.jpeg" alt="">
+        <img src="img/WhatsApp Image 2022-04-28 at 1.17.06 PM (1).jpeg" alt="" style="transform: rotate(-90deg);">
+        <img src="img/WhatsApp Image 2022-04-28 at 1.17.05 PM.jpeg" alt="">
+    </div>
+    <div class="intro1">
+        <p style="margin-top: 0%;margin-bottom: 0%;">---------------------------------</p>
+    </div>
+    <div  style="background-color: #ffdf93;" class="footer">
+        <div>
+            <p style="font-size: 2.5vw;font-family: 'Patrick Hand', cursive; text-align: center; padding-top: 4%;">IF YOU WANT TO CONTACT
+                ME THEN PLEASE TRY THESE LINKS BELOW </p>
+            <nav>
+                <ul class="contacts" style="list-style-type: none; margin-top: 8%;" id="contacts">
+                    <li class="content"><a href="#"><img src="img/icons8-facebook-48.png" alt=""></a></li>
+                    <li class="content"><a href="#"><img src="img/icons8-instagram-48.png" alt=""></a></li>
+                    <li class="content"><a href="#"><img src="img/icons8-linkedin-circled-48.png" alt=""></a></li>
+                    <li class="content"><a href="#"><img src="img/icons8-github-48.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright" style="text-align: center;">
+            &#169; 2022 : DIVYANSHU JHA
+        </div>
+    </div>
+</body>
+
+</html>
